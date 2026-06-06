@@ -138,18 +138,6 @@ BAJO ATAQUE:
 
 ---
 
-## 📸 Capturas de Pantalla
-
-> Insertar capturas en esta sección:
-
-1. **`img/01_arp_antes.png`** — Tabla ARP de VPC-1 antes del ataque (`show arp`). MAC del gateway es la real de R1.
-2. **`img/02_script_corriendo.png`** — Terminal Kali con el script activo mostrando ciclos de envenenamiento.
-3. **`img/03_arp_envenenada.png`** — Tabla ARP de VPC-1 durante el ataque. MAC del gateway ahora es la de Kali.
-4. **`img/04_tcpdump_kali.png`** — `tcpdump -i ens4.10` en Kali mostrando tráfico de VPC-1 interceptado.
-5. **`img/05_arp_restaurada.png`** — Tabla ARP de VPC-1 tras detener el script. MAC del gateway vuelve a ser la real.
-
----
-
 ## 🛡️ Contra-medidas
 
 ### Dynamic ARP Inspection (DAI)
@@ -191,3 +179,4 @@ show arp
 ```
 
 > **Nota:** DAI requiere que DHCP Snooping esté activo para poblar su tabla de vinculaciones IP-MAC. En un lab sin DHCP Snooping, se pueden definir entradas ARP de acceso de forma estática con `ip arp inspection filter`.
+Link a la lista de reproducción: https://www.youtube.com/playlist?list=PL1bMSHFyMPr7W7DrFd-INmRRQDjGquFIV 
